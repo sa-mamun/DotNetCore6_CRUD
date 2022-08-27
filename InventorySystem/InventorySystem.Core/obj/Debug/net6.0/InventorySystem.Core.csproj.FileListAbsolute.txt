@@ -1,0 +1,17 @@
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.deps.json
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.runtimeconfig.json
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.dll
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\ref\InventorySystem.Core.dll
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.pdb
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Data.dll
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Data.pdb
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.AssemblyReference.cache
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.AssemblyInfoInputs.cache
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.AssemblyInfo.cs
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.CoreCompileInputs.cache
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.CopyComplete
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.dll
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\ref\InventorySystem.Core.dll
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.pdb
+D:\SAMIR\DotNetCore\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.genruntimeconfig.cache
