@@ -22,6 +22,17 @@ namespace InventorySystem.Core.Services
             _categoryUnitOfWork.SaveChanges();
         }
 
+        public void Update(Category category)
+        {
+            var oldCategory = _categoryUnitOfWork.CategoryRepository.GetFirstOrDefault(x => x, x => x.Id == 2);
+            if (oldCategory != null)
+            {
+                oldCategory.Name = category.Name;
+                _categoryUnitOfWork.CategoryRepository.Update(oldCategory);
+                _categoryUnitOfWork.SaveChanges();
+            }
+        }
+
         public void Dispose()
         {
             _categoryUnitOfWork?.Dispose();

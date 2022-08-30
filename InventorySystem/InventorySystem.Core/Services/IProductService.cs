@@ -10,5 +10,6 @@ namespace InventorySystem.Core.Services
     public interface IProductService : IDisposable
     {
         void Create(Product product);
+        void Update(Product product);
     }
 }

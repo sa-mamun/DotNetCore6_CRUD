@@ -1,5 +1,6 @@
 ﻿using InventorySystem.Core.Entities;
 using InventorySystem.Core.UnitOfWorks;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,17 @@ namespace InventorySystem.Core.Services
         {
             _productUnitOfWork.ProductRepository.Add(product);
             _productUnitOfWork.SaveChanges();
+        }
+
+        public void Update(Product product)
+        {
+            var oldProduct = _productUnitOfWork.ProductRepository.GetFirstOrDefault(x => x, x => x.Id == 1, x => x.Include(i => i.Category), true);
+            if (oldProduct != null)
+            {
+                oldProduct.Name = product.Name;
+                _productUnitOfWork.ProductRepository.Update(oldProduct);
+                _productUnitOfWork.SaveChanges();
+            }
         }
 
         public void Dispose()

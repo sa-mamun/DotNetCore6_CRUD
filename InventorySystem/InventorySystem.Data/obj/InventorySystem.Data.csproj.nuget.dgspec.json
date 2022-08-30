@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {}
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {}
   },
   "projects": {
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
         "projectName": "InventorySystem.Data",
-        "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
         "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\obj\\",
+        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",

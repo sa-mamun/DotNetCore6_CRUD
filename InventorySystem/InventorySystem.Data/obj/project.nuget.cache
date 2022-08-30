@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8uFXVnncIBHoHn8lS6ptGmpJQ22IQR69i3DrgfsDR8jPBoQXh8yrbvUFrLSHDV+coOh/u3NUUvG7iA08hQGGWw==",
+  "dgSpecHash": "rh7ycAOYooieiu04f0+qkq5o1mOVKKHTH435KpXLgB6n0SR7r0iiVC6LoqmydSdtRPGB4lImVpsRj91j5kqGaw==",
   "success": true,
-  "projectFilePath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+  "projectFilePath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samir\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\samir\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",

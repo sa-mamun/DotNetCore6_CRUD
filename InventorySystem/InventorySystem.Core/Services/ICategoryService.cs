@@ -10,5 +10,6 @@ namespace InventorySystem.Core.Services
     public interface ICategoryService : IDisposable
     {
         void Create(Category category);
+        void Update(Category category);
     }
 }

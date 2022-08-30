@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DurIEWILhBLrSoPcMM1o9Dp2M15heFGmWAzl9klZfRFBo863RYIdlVEVQ/GZWjBLVhCahBiQdSWcdUEvovIqjg==",
+  "dgSpecHash": "9yiOdAVM8tKxikRHGkQbyLTLe9BZvXqq5TrsDEHRMsSj7uKQzjg4bJ1mwhcI9BxztsE6tty/xFPIzePXNA4XAQ==",
   "success": true,
-  "projectFilePath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
+  "projectFilePath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samir\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\samir\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

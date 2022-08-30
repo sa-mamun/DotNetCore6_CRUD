@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {}
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {}
   },
   "projects": {
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
+        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
         "projectName": "InventorySystem.Core",
-        "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
+        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
         "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\obj\\",
+        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
-                "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj"
+              "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
+                "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
         "projectName": "InventorySystem.Data",
-        "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
         "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Data\\obj\\",
+        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -150,14 +150,14 @@
         }
       }
     },
-    "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {
+    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
+        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
         "projectName": "InventorySystem.Web",
-        "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
+        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
         "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Web\\obj\\",
+        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -174,8 +174,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
-                "projectPath": "D:\\SAMIR\\DotNetCore\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj"
+              "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
+                "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj"
               }
             }
           }

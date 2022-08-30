@@ -23,13 +23,15 @@ namespace InventorySystem.Web.Controllers
 
         public IActionResult Index()
         {
-            _categoryService.Create(new Category { Name = "Board" });
+            _categoryService.Create(new Category { Name = "Household" });
+            //_categoryService.Update(new Category { Name = "Updated Electronics" });
             return View();
         }
 
         public IActionResult CreateProduct()
         {
-            _productService.Create(new Product { Name = "Iphone 14", CategoryId = 1 });
+            _productService.Create(new Product { Name = "Iphone 14", CategoryId = 2 });
+            //_productService.Update(new Product { Name = "Update Iphone 14" });
             return View();
         }
 

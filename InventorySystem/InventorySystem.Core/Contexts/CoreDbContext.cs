@@ -32,12 +32,12 @@ public class CoreDbContext : DbContext, ICoreDbContext
             .HasMany(c => c.Products)
             .WithOne(p => p.Category)
             .HasForeignKey(p => p.CategoryId);
-            //.OnDelete(DeleteBehavior.Cascade);
 
-        //modelBuilder.Entity<Product>()
-        //    .WithOne(c => c.Comment)
-        //    .HasForeignKey(v => v.CommentId)
-        //    .OnDelete(DeleteBehavior.Cascade);
+        modelBuilder.Entity<Category>()
+            .Property(a => a.VersionNumber).IsRowVersion();
+
+        modelBuilder.Entity<Product>()
+            .Property(a => a.VersionNumber).IsRowVersion();
 
         base.OnModelCreating(modelBuilder);
     }
