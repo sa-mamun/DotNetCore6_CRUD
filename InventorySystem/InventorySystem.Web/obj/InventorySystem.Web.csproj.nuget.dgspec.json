@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {}
+    "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {}
   },
   "projects": {
-    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
+    "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
+        "projectUniqueName": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
         "projectName": "InventorySystem.Core",
-        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
-        "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\obj\\",
+        "projectPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
+        "packagesPath": "C:\\Users\\Mariful\\.nuget\\packages\\",
+        "outputPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mariful\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
-                "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj"
+              "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
+                "projectPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj"
               }
             }
           }
@@ -73,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
+    "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "projectUniqueName": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
         "projectName": "InventorySystem.Data",
-        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
-        "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\obj\\",
+        "projectPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
+        "packagesPath": "C:\\Users\\Mariful\\.nuget\\packages\\",
+        "outputPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mariful\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,6 +130,10 @@
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
             }
           },
           "imports": [
@@ -137,7 +142,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -146,21 +152,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {
+    "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
+        "projectUniqueName": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
         "projectName": "InventorySystem.Web",
-        "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
-        "packagesPath": "C:\\Users\\samir\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\obj\\",
+        "projectPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
+        "packagesPath": "C:\\Users\\Mariful\\.nuget\\packages\\",
+        "outputPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\samir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mariful\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,8 +180,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
-                "projectPath": "D:\\GitHub_Repo\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj"
+              "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj": {
+                "projectPath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj"
               }
             }
           }
@@ -233,7 +239,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -245,7 +252,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

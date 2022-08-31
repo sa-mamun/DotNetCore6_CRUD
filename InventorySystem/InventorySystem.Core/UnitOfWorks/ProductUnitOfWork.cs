@@ -12,10 +12,10 @@ namespace InventorySystem.Core.UnitOfWorks;
 
 public class ProductUnitOfWork : UnitOfWork, IProductUnitOfWork
 {
-    public IProductRepository ProductRepository { get; set; }
+    public IProductCommandRepository ProductRepository { get; set; }
 
     public ProductUnitOfWork(CoreDbContext dbContext,
-        IProductRepository productRepository) : base(dbContext)
+        IProductCommandRepository productRepository) : base(dbContext)
     {
         ProductRepository = productRepository;
     }

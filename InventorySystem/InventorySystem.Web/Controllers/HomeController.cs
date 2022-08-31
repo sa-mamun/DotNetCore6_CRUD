@@ -23,7 +23,8 @@ namespace InventorySystem.Web.Controllers
 
         public IActionResult Index()
         {
-            _categoryService.Create(new Category { Name = "Household" });
+            var categories = _categoryService.LoadAll();
+            //_categoryService.Create(new Category { Name = "Household" });
             //_categoryService.Update(new Category { Name = "Updated Electronics" });
             return View();
         }
