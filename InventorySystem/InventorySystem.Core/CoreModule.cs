@@ -38,12 +38,16 @@ namespace InventorySystem.Core
                 .InstancePerLifetimeScope();
             builder.RegisterType<CategoryCommandRepository>().As<ICategoryCommandRepository>()
                 .InstancePerLifetimeScope();
+            builder.RegisterType<CategoryQueryRepository>().As<ICategoryQueryRepository>()
+                .InstancePerLifetimeScope();
             builder.RegisterType<CategoryUnitOfWork>().As<ICategoryUnitOfWork>()
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<ProductService>().As<IProductService>()
                 .InstancePerLifetimeScope();
             builder.RegisterType<ProductCommandRepository>().As<IProductCommandRepository>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<ProductQueryRepository>().As<IProductQueryRepository>()
                 .InstancePerLifetimeScope();
             builder.RegisterType<ProductUnitOfWork>().As<IProductUnitOfWork>()
                 .InstancePerLifetimeScope();
