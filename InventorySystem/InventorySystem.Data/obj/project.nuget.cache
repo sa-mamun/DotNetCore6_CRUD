@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aqVeLzvivjEJBvKAUcZAKviji8coqOLBTdYInBswXH+xo6iEggcsL9v0jEf6/UsL/1t4bE1UwPPb0AIEde8j/g==",
+  "dgSpecHash": "l4WU83Zgixa0S31APspbWRyhjriOaqlZX8dAHpoXwO7llpQ2cf42bERKbvIZaqnjH3kpSXNXadedYd1LuK0rzA==",
   "success": true,
   "projectFilePath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Data\\InventorySystem.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mariful\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YVAWa+gSw7iyOnGstHrPB6qcc7nsqIgt4pAB8f5Qd8ekSm+MPyNfyjo1+Sz0BBWqSRQQe8VuJ9nY3A5R+iaOjw==",
+  "dgSpecHash": "HT7K35YBhWw2uKpYsvPp7srz2lwjRL3sp1GBGO3mI0xw48VKOJKTQnkFRcmtyTnBKNlRxcb1dWKL7r7Lfkitvg==",
   "success": true,
   "projectFilePath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Core\\InventorySystem.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mariful\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Mariful\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

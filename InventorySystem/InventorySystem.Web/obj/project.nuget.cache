@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rMpQdTSRrKD2a9X0hehVEftLbDeNJHmUnmV+3eyORkU6qBHJG5TmIstk+JPs+Cl6+pTfwCKEMWKrATFBiNvgiQ==",
+  "dgSpecHash": "tCsMv+pa9qskV7rDL4XgEI6HcywtM6yWMkgHjIlVG6bSRo4VE6FfqKG/YEH6IU+nwl9aZIh/A7CaqYcoimjUhA==",
   "success": true,
   "projectFilePath": "D:\\Upcoming Name\\DotNetCore6_CRUD\\InventorySystem\\InventorySystem.Web\\InventorySystem.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mariful\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Mariful\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Mariful\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

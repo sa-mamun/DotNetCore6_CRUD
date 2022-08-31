@@ -1,4 +1,5 @@
 ﻿using InventorySystem.Core.Entities;
+using InventorySystem.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace InventorySystem.Core.Services
     {
         void Create(Category category);
         void Update(Category category);
+        List<CategoryDto> LoadAll();
     }
 }

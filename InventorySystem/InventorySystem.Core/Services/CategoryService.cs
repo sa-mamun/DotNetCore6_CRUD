@@ -1,4 +1,5 @@
 ﻿using InventorySystem.Core.Entities;
+using InventorySystem.Core.Repositories;
 using InventorySystem.Core.UnitOfWorks;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,14 @@ namespace InventorySystem.Core.Services
     public class CategoryService : ICategoryService
     {
         ICategoryUnitOfWork _categoryUnitOfWork;
+        ICategoryQueryRepository _categoryQueryRepository;
+        IProductQueryRepository _productQueryRepository;
 
-        public CategoryService(ICategoryUnitOfWork categoryUnitOfWork)
+        public CategoryService(ICategoryUnitOfWork categoryUnitOfWork, ICategoryQueryRepository categoryQueryRepository, IProductQueryRepository productQueryRepository)
         {
             _categoryUnitOfWork = categoryUnitOfWork;
+            _categoryQueryRepository = categoryQueryRepository;
+            _productQueryRepository = productQueryRepository;
         }
         public void Create(Category category)
         {
@@ -32,10 +37,12 @@ namespace InventorySystem.Core.Services
                 _categoryUnitOfWork.SaveChanges();
             }
         }
+        public List<CategoryDto> LoadAll() => _categoryQueryRepository.LoadCategories();
 
         public void Dispose()
         {
             _categoryUnitOfWork?.Dispose();
         }
+
     }
 }

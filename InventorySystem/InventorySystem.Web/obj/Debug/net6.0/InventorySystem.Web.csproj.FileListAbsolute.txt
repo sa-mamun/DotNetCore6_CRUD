@@ -838,3 +838,4 @@ D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Web\obj\Debug\
 D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Web\obj\Debug\net6.0\InventorySystem.Web.pdb
 D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Web\obj\Debug\net6.0\InventorySystem.Web.genruntimeconfig.cache
 D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Web\obj\Debug\net6.0\ref\InventorySystem.Web.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Web\bin\Debug\net6.0\Dapper.dll
