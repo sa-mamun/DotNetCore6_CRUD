@@ -32,3 +32,20 @@ D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\n
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\ref\InventorySystem.Core.dll
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.pdb
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.genruntimeconfig.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.deps.json
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.runtimeconfig.json
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Core.pdb
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Data.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\bin\Debug\net6.0\InventorySystem.Data.pdb
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.AssemblyReference.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.AssemblyInfoInputs.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.AssemblyInfo.cs
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.CoreCompileInputs.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.csproj.CopyComplete
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\refint\InventorySystem.Core.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.pdb
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\InventorySystem.Core.genruntimeconfig.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Core\obj\Debug\net6.0\ref\InventorySystem.Core.dll

@@ -10,6 +10,6 @@ namespace InventorySystem.Core.UnitOfWorks
 {
     public interface IProductUnitOfWork : IUnitOfWork
     {
-        IProductRepository ProductRepository { get; set; }
+        IProductCommandRepository ProductRepository { get; set; }
     }
 }

@@ -11,6 +11,6 @@ namespace InventorySystem.Core.UnitOfWorks
 {
     public interface ICategoryUnitOfWork : IUnitOfWork
     {
-        ICategoryRepository CategoryRepository { get; set; }
+        ICategoryCommandRepository CategoryRepository { get; set; }
     }
 }

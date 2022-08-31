@@ -21,3 +21,15 @@ D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\n
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\ref\InventorySystem.Data.dll
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.pdb
 D:\GitHub_Repo\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.csproj.AssemblyReference.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\bin\Debug\net6.0\InventorySystem.Data.deps.json
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\bin\Debug\net6.0\InventorySystem.Data.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\bin\Debug\net6.0\InventorySystem.Data.pdb
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.csproj.AssemblyReference.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.AssemblyInfoInputs.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.AssemblyInfo.cs
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.csproj.CoreCompileInputs.cache
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\refint\InventorySystem.Data.dll
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\InventorySystem.Data.pdb
+D:\Upcoming Name\DotNetCore6_CRUD\InventorySystem\InventorySystem.Data\obj\Debug\net6.0\ref\InventorySystem.Data.dll

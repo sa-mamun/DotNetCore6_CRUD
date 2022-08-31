@@ -12,10 +12,10 @@ namespace InventorySystem.Core.UnitOfWorks;
 
 public class CategoryUnitOfWork : UnitOfWork, ICategoryUnitOfWork
 {
-    public ICategoryRepository CategoryRepository { get; set; }
+    public ICategoryCommandRepository CategoryRepository { get; set; }
 
     public CategoryUnitOfWork(CoreDbContext dbContext,
-        ICategoryRepository categoryRepository) : base(dbContext)
+        ICategoryCommandRepository categoryRepository) : base(dbContext)
     {
         CategoryRepository = categoryRepository;
     }
