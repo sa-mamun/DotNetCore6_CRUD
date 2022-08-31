@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace InventorySystem.Core.Repositories;
 
-public class ProductRepository : BaseRepository<Product, long, CoreDbContext>, IProductRepository
+public class ProductCommandRepository : BaseRepository<Product, long, CoreDbContext>, IProductCommandRepository
 {
-    public ProductRepository(CoreDbContext dbContext)
+    public ProductCommandRepository(CoreDbContext dbContext)
         : base(dbContext)
     {
     }

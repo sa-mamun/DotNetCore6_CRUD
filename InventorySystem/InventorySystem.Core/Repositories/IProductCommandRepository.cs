@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace InventorySystem.Core.Repositories
 {
-    public interface ICategoryRepository : IBaseRepository<Category, long, CoreDbContext>
+    public interface IProductCommandRepository : IBaseRepository<Product, long, CoreDbContext>
     {
-        void GetByName(string name);
+        void GetProductById(long id);
     }
 }
