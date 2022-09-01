@@ -37,7 +37,7 @@ namespace InventorySystem.Core.Services
                 _categoryUnitOfWork.SaveChanges();
             }
         }
-        public List<CategoryDto> LoadAll() => _categoryQueryRepository.LoadCategories();
+        public List<CategoryDto> LoadAll() => _categoryUnitOfWork.CategoryRepository.LoadAll();
 
         public void Dispose()
         {

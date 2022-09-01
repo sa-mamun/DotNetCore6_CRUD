@@ -12,5 +12,6 @@ namespace InventorySystem.Core.Repositories
     public interface ICategoryCommandRepository : IBaseRepository<Category, long, CoreDbContext>
     {
         void GetByName(string name);
+        List<CategoryDto> LoadAll();
     }
 }

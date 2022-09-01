@@ -32,6 +32,7 @@ namespace InventorySystem.Core.Repositories
             {
                 con.Open();
                 var result = con.Query<CategoryDto>(@"SELECT Id, Name FROM Categories");
+                var result2 = con.Query<CategoryDto>(@"SELECT Id, Name FROM Categories");
 
                 return result.ToList();
             };

@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
+using System.Data.SqlClient;
 using System.Dynamic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -19,11 +21,13 @@ namespace InventorySystem.Data
         #region CONFIG
         protected TContext _dbContext;
         protected DbSet<TEntity> _dbSet;
+        protected string _connectionString;
 
         public BaseRepository(TContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<TEntity>();
+            _connectionString = _dbContext.Database.GetConnectionString();
         }
         #endregion
 
@@ -439,6 +443,23 @@ namespace InventorySystem.Data
             }
 
             return (items, totalCount ?? 0, filteredCount ?? 0);
+        }
+        #endregion
+
+        #region Dapper SQL
+        public List<T> ExecuteDapperSql<T>(string query)
+        {
+            var itemList = new List<T>();
+            if (string.IsNullOrWhiteSpace(query) == false)
+            {
+                using (var connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    itemList = connection.Query<T>(query).ToList();
+                }
+            }
+
+            return itemList;
         }
         #endregion
     }

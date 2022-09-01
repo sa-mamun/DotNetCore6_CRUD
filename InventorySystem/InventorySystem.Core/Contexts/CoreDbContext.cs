@@ -1,4 +1,5 @@
 ﻿using InventorySystem.Core.Entities;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace InventorySystem.Core.Contexts;
@@ -44,5 +45,15 @@ public class CoreDbContext : DbContext, ICoreDbContext
 
     public DbSet<Category> Categories { get; set; }
     public DbSet<Product> Products { get; set; }
+
+    #region Dapper Connection
+    public SqlConnection DapperConnectionOpen()
+    {
+        var connection = new SqlConnection(_connectionString);
+        connection.Open();
+
+        return connection;
+    }
+    #endregion
 }
 

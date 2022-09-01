@@ -20,5 +20,17 @@ namespace InventorySystem.Core.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public List<CategoryDto> LoadAll()
+        {
+            var query = $@"
+SELECT
+    *
+FROM Categories;
+";
+            var itemList = ExecuteDapperSql<CategoryDto>(query);
+
+            return itemList;
+        }
     }
 }
