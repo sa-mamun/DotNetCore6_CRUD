@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using InventorySystem.Core.Entities;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,7 @@ namespace InventorySystem.Membership.Entities
 {
     public class ApplicationUser : IdentityUser<long>
     {
+        public Employee? Employee { get; set; }
+        public long? EmployeeId { get; set; }
     }
 }

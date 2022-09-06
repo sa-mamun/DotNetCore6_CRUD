@@ -1,4 +1,5 @@
-﻿using InventorySystem.Membership.Contexts;
+﻿using InventorySystem.Core.Entities;
+using InventorySystem.Membership.Contexts;
 using InventorySystem.Membership.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +37,9 @@ namespace InventorySystem.Membership
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Ignore<Employee>();
+            builder.Ignore<Department>();
+            builder.Ignore<Designation>();
             base.OnModelCreating(builder);
         }
     }
