@@ -45,15 +45,8 @@ public class CoreDbContext : DbContext, ICoreDbContext
 
     public DbSet<Category> Categories { get; set; }
     public DbSet<Product> Products { get; set; }
-
-    #region Dapper Connection
-    public SqlConnection DapperConnectionOpen()
-    {
-        var connection = new SqlConnection(_connectionString);
-        connection.Open();
-
-        return connection;
-    }
-    #endregion
+    public DbSet<Employee> Employees { get; set; }
+    public DbSet<Department> Departments { get; set; }
+    public DbSet<Designation> Designations { get; set; }
 }
 
