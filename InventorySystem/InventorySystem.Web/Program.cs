@@ -101,6 +101,7 @@ try
     var userManager = app.Services.GetRequiredService<UserManager<ApplicationUser>>();
     var roleManager = app.Services.GetRequiredService<RoleManager<Role>>();
     await DefaultRoles.SeedAsync(userManager, roleManager);
+    //await DefaultUsers.SeedBasicUserAsync(userManager, roleManager);
     await DefaultUsers.SeedSuperAdminAsync(userManager, roleManager);
 
     // Configure the HTTP request pipeline.

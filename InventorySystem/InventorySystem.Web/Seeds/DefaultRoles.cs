@@ -10,6 +10,7 @@ namespace InventorySystem.Web.Seeds
         public static async Task SeedAsync(UserManager<ApplicationUser> userManager, RoleManager<Role> roleManager)
         {
             await roleManager.CreateAsync(new Role(SeedRoles.SuperAdmin.ToString()));
+            //await roleManager.CreateAsync(new Role("Basic"));
         }
     }
 }
