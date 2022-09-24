@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InventorySystem.Core\InventorySystem.Core.csproj" />
+    <ProjectReference Include="..\InventorySystem.Domain\InventorySystem.Domain.csproj" />
     <ProjectReference Include="..\InventorySystem.Membership\InventorySystem.Membership.csproj" />
   </ItemGroup>
 
