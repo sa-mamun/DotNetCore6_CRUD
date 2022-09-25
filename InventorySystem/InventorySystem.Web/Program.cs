@@ -6,6 +6,7 @@ using InventorySystem.Core.Contexts;
 using InventorySystem.Membership;
 using InventorySystem.Membership.Entities;
 using InventorySystem.Membership.Services;
+using InventorySystem.Web.Permissions;
 using InventorySystem.Web.Seeds;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
@@ -18,12 +19,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var migrationAssemblyName = typeof(Program).Assembly.FullName;
+
+//builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
+//builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString, b =>
         b.MigrationsAssembly(migrationAssemblyName)));
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    //.AddEntityFrameworkStores<ApplicationDbContext>();
+//.AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddDbContext<CoreDbContext>(options =>
     options.UseSqlServer(connectionString, b =>
