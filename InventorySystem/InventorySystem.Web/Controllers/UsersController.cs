@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventorySystem.Web.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UsersController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

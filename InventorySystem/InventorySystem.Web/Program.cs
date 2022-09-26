@@ -20,8 +20,8 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var migrationAssemblyName = typeof(Program).Assembly.FullName;
 
-//builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
-//builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
+builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString, b =>
@@ -54,6 +54,7 @@ builder.Services
     .AddUserManager<UserManager>()
     .AddRoleManager<RoleManager>()
     .AddSignInManager<SignInManager>()
+    //.AddDefaultUI()
 .AddDefaultTokenProviders();
 
 //builder.Services.Configure<IdentityOptions>(options =>

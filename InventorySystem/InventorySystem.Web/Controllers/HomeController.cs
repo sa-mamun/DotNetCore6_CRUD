@@ -1,11 +1,13 @@
 ﻿using InventorySystem.Core.Entities;
 using InventorySystem.Core.Services;
 using InventorySystem.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace InventorySystem.Web.Controllers
 {
+    //[Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
