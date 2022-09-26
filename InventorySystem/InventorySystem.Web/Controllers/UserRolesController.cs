@@ -7,12 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace InventorySystem.Web.Controllers
 {
     //[Authorize(Roles = "SuperAdmin")]
-    public class UserRolesController : Controller
+    public class UserRolesController : BaseController
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<Role> _roleManager;
-        public UserRolesController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<Role> roleManager)
+        public UserRolesController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<Role> roleManager, IAuthorizationService authorizationService)
+            : base(authorizationService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
