@@ -12,5 +12,6 @@ namespace InventorySystem.Core.Entities
         public string AreaName { get; set; }
         public string ControllerName { get; set; }
         public string Name { get; set; }
+        public List<Menu> Menus { get; set; }
     }
 }
