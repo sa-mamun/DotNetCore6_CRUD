@@ -1,25 +1,28 @@
 ﻿using InventorySystem.Core.Entities;
 using InventorySystem.Core.Services;
+using InventorySystem.Web.Controllers;
 using InventorySystem.Web.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace InventorySystem.Web.Controllers
+namespace InventorySystem.Web.Areas.User.Controllers
 {
-    //[Authorize]
-    public class HomeController : Controller
+    [Area("User")]
+    public class DashboardController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<DashboardController> _logger;
         private readonly ICategoryService _categoryService;
         private readonly IProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger, 
+        public DashboardController(ILogger<DashboardController> logger,
             ICategoryService categoryService,
-            IProductService productService)
+            IProductService productService, IAuthorizationService authorizationService)
+            :base(authorizationService)
         {
             _logger = logger;
-            _categoryService =  categoryService;
+            _categoryService = categoryService;
             _productService = productService;
         }
 
