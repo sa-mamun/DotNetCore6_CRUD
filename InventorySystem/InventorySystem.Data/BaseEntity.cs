@@ -10,8 +10,8 @@ namespace InventorySystem.Data
     public abstract class BaseEntity<TKey>
     {
         public TKey Id { get; set; }
-        [Timestamp]
-        public byte[] VersionNumber { get; set; }
+        //[Timestamp]
+        //public byte[] VersionNumber { get; set; }
     }
     
 }

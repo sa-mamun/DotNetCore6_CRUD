@@ -34,12 +34,6 @@ public class CoreDbContext : DbContext, ICoreDbContext
             .WithOne(p => p.Category)
             .HasForeignKey(p => p.CategoryId);
 
-        modelBuilder.Entity<Category>()
-            .Property(a => a.VersionNumber).IsRowVersion();
-
-        modelBuilder.Entity<Product>()
-            .Property(a => a.VersionNumber).IsRowVersion();
-
         base.OnModelCreating(modelBuilder);
     }
 
@@ -48,5 +42,7 @@ public class CoreDbContext : DbContext, ICoreDbContext
     public DbSet<Employee> Employees { get; set; }
     public DbSet<Department> Departments { get; set; }
     public DbSet<Designation> Designations { get; set; }
+    public DbSet<RootMenu> RootMenus { get; set; }
+    public DbSet<Menu> Menus { get; set; }
 }
 
