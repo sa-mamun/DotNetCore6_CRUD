@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InventorySystem.Web.Migrations
 {
     [DbContext(typeof(CoreDbContext))]
-    [Migration("20220930044914_ChangedPropertyBetween_Menu_RootMenu")]
-    partial class ChangedPropertyBetween_Menu_RootMenu
+    [Migration("20220930055025_AddedMenu_RootMenu")]
+    partial class AddedMenu_RootMenu
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -127,11 +127,11 @@ namespace InventorySystem.Web.Migrations
 
             modelBuilder.Entity("InventorySystem.Core.Entities.Menu", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<string>("ActionName")
                         .IsRequired()

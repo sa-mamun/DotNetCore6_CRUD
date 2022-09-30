@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventorySystem.Core.Entities
 {
-    public class Menu : AuditableEntity<int>
+    public class Menu : AuditableEntity<long>
     {
         public RootMenu RootMenu{ get; set; }
         public string AreaName { get; set; }
