@@ -10,6 +10,8 @@ namespace InventorySystem.Core.Entities
     public class Menu : AuditableEntity<int>
     {
         public RootMenu RootMenu{ get; set; }
+        public string AreaName { get; set; }
+        public string ControllerName { get; set; }
         public string ActionName { get; set; }
         public string MenuName { get; set; }
     }
