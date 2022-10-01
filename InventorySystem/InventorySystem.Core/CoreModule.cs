@@ -52,12 +52,12 @@ namespace InventorySystem.Core
             builder.RegisterType<ProductUnitOfWork>().As<IProductUnitOfWork>()
                 .InstancePerLifetimeScope();
 
-            //builder.RegisterType<QuestionRepository>().As<IQuestionRepository>()
-            //    .InstancePerLifetimeScope();
-            //builder.RegisterType<CommentRepository>().As<ICommentRepository>()
-            //    .InstancePerLifetimeScope();
-            //builder.RegisterType<VoteRepository>().As<IVoteRepository>()
-            //    .InstancePerLifetimeScope();
+            builder.RegisterType<MenuRepository>().As<IMenuRepository>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<MenuUnitOfWork>().As<IMenuUnitOfWork>()
+                .InstancePerLifetimeScope();
+            builder.RegisterType<MenuService>().As<IMenuService>()
+                .InstancePerLifetimeScope();
 
             //builder.RegisterType<PlatformUnitOfWork>().As<IPlatformUnitOfWork>()
             //    .InstancePerLifetimeScope();

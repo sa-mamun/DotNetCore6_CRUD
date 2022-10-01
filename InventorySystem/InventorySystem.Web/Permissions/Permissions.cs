@@ -1,4 +1,6 @@
-﻿namespace InventorySystem.Web.Permissions
+﻿using InventorySystem.Core.UnitOfWorks;
+
+namespace InventorySystem.Web.Permissions
 {
     public static class Permissions
     {
