@@ -1,1 +1,1 @@
-# DotNetCore6_CRUD
+# DotNetCore6_CRUD Application
