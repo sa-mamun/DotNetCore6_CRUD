@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventorySystem.Web.Controllers
 {
-    //[Authorize(Roles = "SuperAdmin")]
+    [Authorize(Roles = "SuperAdmin")]
     public class RolesController : Controller
     {
         private readonly RoleManager<Role> _roleManager;

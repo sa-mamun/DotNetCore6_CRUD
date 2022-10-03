@@ -43,7 +43,20 @@ namespace InventorySystem.Web.Controllers
             IList <RoleClaimsViewModel> roleClaimsViewModels = new List<RoleClaimsViewModel>();
             foreach (var menu in menus)
             {
-                roleClaimsViewModels.Add(new RoleClaimsViewModel { Type = "Permission", Value = $"{menu.AreaName}.{menu.ControllerName}.{menu.ActionName}", Selected = false });
+                string permission = string.Empty;
+                
+                if (string.IsNullOrWhiteSpace(menu.ControllerName) == false)
+                    permission += $"{menu.ControllerName}.";
+                if (string.IsNullOrWhiteSpace(menu.ActionName) == false)
+                    permission += $"{menu.ActionName}";
+
+                roleClaimsViewModels.Add(
+                    new RoleClaimsViewModel 
+                    { 
+                        Type = string.IsNullOrWhiteSpace(menu.AreaName) ? "Permission" : menu.AreaName, 
+                        Value = permission, 
+                        Selected = false 
+                    });
             }
 
             model.RoleClaims = roleClaimsViewModels;
@@ -60,7 +73,9 @@ namespace InventorySystem.Web.Controllers
             var selectedClaims = model.RoleClaims.Where(a => a.Selected).ToList();
             foreach (var claim in selectedClaims)
             {
-                await _roleManager.AddPermissionClaim(role, claim.Value);
+                //TODO: changed for permission
+                string area = string.IsNullOrWhiteSpace(claim.Type) ? "Permission" : claim.Type;
+                await _roleManager.AddPermissionClaim(role, $"{claim.Value}", area);
             }
             return RedirectToAction("Index", new { roleId = model.RoleId });
         }

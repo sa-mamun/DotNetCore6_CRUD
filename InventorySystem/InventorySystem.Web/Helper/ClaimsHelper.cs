@@ -18,12 +18,13 @@ namespace InventorySystem.Web.Helper
             }
         }
 
-        public static async Task AddPermissionClaim(this RoleManager<Role> roleManager, Role role, string permission)
+        public static async Task AddPermissionClaim(this RoleManager<Role> roleManager, Role role, string permission, string type)
         {
             var allClaims = await roleManager.GetClaimsAsync(role);
-            if (!allClaims.Any(a => a.Type == "Permission" && a.Value == permission))
+            //TODO: changed for permission
+            if (!allClaims.Any(a => a.Type == type && a.Value == permission))
             {
-                await roleManager.AddClaimAsync(role, new Claim("Permission", permission));
+                await roleManager.AddClaimAsync(role, new Claim(type, permission));
             }
         }
     }

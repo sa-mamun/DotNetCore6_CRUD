@@ -22,13 +22,12 @@ namespace InventorySystem.Web.Controllers
             var controllerName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ControllerName;
             var actionName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ActionName;
 
-            if (_authorizationService.AuthorizeAsync(User, $"{areaName}.{controllerName}.{actionName}").Result.Succeeded)
+            areaName = string.IsNullOrWhiteSpace(areaName?.ToString()) ? "Permission": areaName;
+            if (_authorizationService.AuthorizeAsync(User, $"{areaName}.{controllerName}.{actionName}").Result.Succeeded == false)
             {
-
+                context.Result = new RedirectResult("Account/AccessDenied/");
+                return;
             }
-
-            context.Result = new RedirectResult("Account/AccessDenied/");
-            return;
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using static InventorySystem.Web.Permissions.Permissions;
 
 namespace InventorySystem.Web.Controllers
 {
