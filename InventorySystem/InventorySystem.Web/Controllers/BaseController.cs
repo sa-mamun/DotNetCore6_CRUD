@@ -18,17 +18,19 @@ namespace InventorySystem.Web.Controllers
          
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            var areaName = ((ControllerBase)context.Controller).ControllerContext.RouteData.Values["area"];
-            var controllerName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ControllerName;
-            var actionName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ActionName;
-
-            if (_authorizationService.AuthorizeAsync(User, $"{areaName}.{controllerName}.{actionName}").Result.Succeeded)
+            if (User.IsInRole("SuperAdmin") == false)
             {
+                var areaName = ((ControllerBase)context.Controller).ControllerContext.RouteData.Values["area"];
+                var controllerName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ControllerName;
+                var actionName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ActionName;
 
+                areaName = string.IsNullOrWhiteSpace(areaName?.ToString()) ? "Permission" : areaName;
+                if (_authorizationService.AuthorizeAsync(User, $"{areaName}.{controllerName}.{actionName}").Result.Succeeded == false)
+                {
+                    context.Result = new RedirectResult("Account/AccessDenied/");
+                    return;
+                }
             }
-
-            context.Result = new RedirectResult("Account/AccessDenied/");
-            return;
         }
     }
 }

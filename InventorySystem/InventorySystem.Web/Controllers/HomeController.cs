@@ -7,16 +7,19 @@ using System.Diagnostics;
 
 namespace InventorySystem.Web.Controllers
 {
-    //[Authorize]
-    public class HomeController : Controller
+    //[Authorize(Roles = "SuperAdmin")]
+    public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ICategoryService _categoryService;
         private readonly IProductService _productService;
+        private readonly IAuthorizationService _authorizationService;
 
         public HomeController(ILogger<HomeController> logger, 
             ICategoryService categoryService,
-            IProductService productService)
+            IProductService productService,
+            IAuthorizationService authorizationService)
+            :base(authorizationService)
         {
             _logger = logger;
             _categoryService =  categoryService;
