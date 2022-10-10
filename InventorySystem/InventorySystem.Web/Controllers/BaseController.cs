@@ -11,9 +11,9 @@ namespace InventorySystem.Web.Controllers
     {
         public readonly IAuthorizationService _authorizationService;
 
-        public BaseController(IAuthorizationService AuthorizationService)
+        public BaseController(IAuthorizationService authorizationService)
         {
-            _authorizationService = AuthorizationService;
+            _authorizationService = authorizationService;
         }
          
         public override void OnActionExecuting(ActionExecutingContext context)

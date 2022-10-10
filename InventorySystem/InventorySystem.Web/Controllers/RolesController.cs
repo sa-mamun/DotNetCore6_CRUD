@@ -7,11 +7,12 @@ using Microsoft.EntityFrameworkCore;
 namespace InventorySystem.Web.Controllers
 {
     //[Authorize(Roles = "SuperAdmin")]
-    [Authorize]
-    public class RolesController : Controller
+    //[Authorize]
+    public class RolesController : BaseController
     {
         private readonly RoleManager<Role> _roleManager;
-        public RolesController(RoleManager<Role> roleManager)
+        public RolesController(RoleManager<Role> roleManager, IAuthorizationService authorizationService)
+            :base(authorizationService)
         {
             _roleManager = roleManager;
         }

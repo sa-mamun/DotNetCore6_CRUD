@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InventorySystem.Web.Controllers
 {
     //[Authorize(Roles = "SuperAdmin")]
-    [Authorize]
+    //[Authorize]
     public class UserRolesController : BaseController
     {
         private readonly SignInManager<ApplicationUser> _signInManager;

@@ -6,11 +6,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InventorySystem.Web.Controllers
 {
-    [Authorize(Roles ="SuperAdmin")]
-    public class UsersController : Controller
+    //[Authorize(Roles ="SuperAdmin")]
+    public class UsersController : BaseController
     {
         private readonly UserManager<ApplicationUser> _userManager;
-        public UsersController(UserManager<ApplicationUser> userManager)
+        public UsersController(UserManager<ApplicationUser> userManager, IAuthorizationService authorizationService)
+            :base(authorizationService)
         {
             _userManager = userManager;
         }

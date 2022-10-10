@@ -9,13 +9,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace InventorySystem.Web.Controllers
 {
     //[Authorize(Roles = "SuperAdmin")]
-    [Authorize]
-    public class PermissionController : Controller
+    //[Authorize]
+    public class PermissionController : BaseController
     {
         private readonly RoleManager<Role> _roleManager;
         private readonly IMenuService _menuService;
 
-        public PermissionController(RoleManager<Role> roleManager, IMenuService menuService)
+        public PermissionController(RoleManager<Role> roleManager, IMenuService menuService, IAuthorizationService authorizationService)
+            :base(authorizationService)
         {
             _roleManager = roleManager;
             _menuService = menuService;
