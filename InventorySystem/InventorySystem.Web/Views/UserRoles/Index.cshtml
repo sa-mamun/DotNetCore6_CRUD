@@ -36,6 +36,42 @@
                 </tbody>
             </table>
 
+            <table class="table table-striped" id="permissionTable">
+                <thead>
+                    <tr>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            Permission
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Permissions.Count(); i++)
+                    {
+                        <tr>
+                            <td>
+                                <input asp-for="@Model.Permissions[i].Type" type="hidden" />
+                                @Model.Permissions[i].Type
+                            </td>
+                            <td>
+                                <input asp-for="@Model.Permissions[i].Value" type="hidden" />
+                                @Model.Permissions[i].Value
+                            </td>
+                            <td>
+                                <div class="form-check m-1">
+                                    <input asp-for="@Model.Permissions[i].Selected" class="form-check-input" />
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
             <div class="col-sm-12" style=" padding: 20px 20px 0px 0px">
                 <button type="submit" id="save" class="btn btn-success">
                     <i class="fa fa-check"></i>

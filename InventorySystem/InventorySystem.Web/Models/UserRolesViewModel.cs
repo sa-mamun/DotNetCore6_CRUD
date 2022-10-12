@@ -7,6 +7,7 @@ namespace InventorySystem.Web.Models
     {
         public string UserId { get; set; }
         public IList<UserRolesViewModel> UserRoles { get; set; }
+        public IList<ClaimsViewModel> Permissions { get; set; }
     }
 
     public class UserRolesViewModel

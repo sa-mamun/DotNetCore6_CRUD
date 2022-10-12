@@ -8,13 +8,13 @@ namespace InventorySystem.Web.Helper
 {
     public static class ClaimsHelper
     {
-        public static void GetPermissions(this List<RoleClaimsViewModel> allPermissions, Type policy, string roleId)
+        public static void GetPermissions(this List<ClaimsViewModel> allPermissions, Type policy, string roleId)
         {
             FieldInfo[] fields = policy.GetFields(BindingFlags.Static | BindingFlags.Public);
 
             foreach (FieldInfo fi in fields)
             {
-                allPermissions.Add(new RoleClaimsViewModel { Value = fi.GetValue(null).ToString(), Type = "Permissions" });
+                allPermissions.Add(new ClaimsViewModel { Value = fi.GetValue(null).ToString(), Type = "Permissions" });
             }
         }
 
@@ -25,6 +25,16 @@ namespace InventorySystem.Web.Helper
             if (!allClaims.Any(a => a.Type == type && a.Value == permission))
             {
                 await roleManager.AddClaimAsync(role, new Claim(type, permission));
+            }
+        }
+
+        public static async Task AddPermissionClaim(this UserManager<ApplicationUser> userManager, ApplicationUser user, string permission, string type)
+        {
+            var allClaims = await userManager.GetClaimsAsync(user);
+            //TODO: changed for permission
+            if (!allClaims.Any(a => a.Type == type && a.Value == permission))
+            {
+                await userManager.AddClaimAsync(user, new Claim(type, permission));
             }
         }
     }

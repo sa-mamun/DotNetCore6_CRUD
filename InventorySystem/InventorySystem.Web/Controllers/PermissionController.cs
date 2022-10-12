@@ -5,6 +5,7 @@ using InventorySystem.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace InventorySystem.Web.Controllers
 {
@@ -13,12 +14,14 @@ namespace InventorySystem.Web.Controllers
     public class PermissionController : BaseController
     {
         private readonly RoleManager<Role> _roleManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly IMenuService _menuService;
 
-        public PermissionController(RoleManager<Role> roleManager, IMenuService menuService, IAuthorizationService authorizationService)
+        public PermissionController(RoleManager<Role> roleManager, UserManager<ApplicationUser> userManager, IMenuService menuService, IAuthorizationService authorizationService)
             :base(authorizationService)
         {
             _roleManager = roleManager;
+            _userManager = userManager;
             _menuService = menuService;
         }
 
@@ -26,13 +29,13 @@ namespace InventorySystem.Web.Controllers
         {
             var model = new PermissionViewModel();
             var menus = _menuService.LoadAllMenus();
-            var allPermissions = new List<RoleClaimsViewModel>();
+            var allPermissions = new List<ClaimsViewModel>();
 
             var role = await _roleManager.FindByIdAsync(roleId);
             model.RoleId = roleId;
             var claims = await _roleManager.GetClaimsAsync(role);
 
-            IList <RoleClaimsViewModel> roleClaimsViewModels = new List<RoleClaimsViewModel>();
+            IList <ClaimsViewModel> roleClaimsViewModels = new List<ClaimsViewModel>();
             foreach (var menu in menus)
             {
                 bool isGranted = false;
@@ -48,7 +51,7 @@ namespace InventorySystem.Web.Controllers
                     isGranted = true;
 
                 roleClaimsViewModels.Add(
-                    new RoleClaimsViewModel 
+                    new ClaimsViewModel 
                     { 
                         Type = permissionType, 
                         Value = permission, 
@@ -74,6 +77,7 @@ namespace InventorySystem.Web.Controllers
                 string area = string.IsNullOrWhiteSpace(claim.Type) ? "Permission" : claim.Type;
                 await _roleManager.AddPermissionClaim(role, $"{claim.Value}", area);
             }
+
             return RedirectToAction("Index", new { roleId = model.RoleId });
         }
     }

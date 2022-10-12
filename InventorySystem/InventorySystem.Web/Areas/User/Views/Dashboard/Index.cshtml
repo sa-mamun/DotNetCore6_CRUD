@@ -12,7 +12,13 @@
     <h1>Menus:</h1>
     @foreach (var menu in @Model)
     {
+        <div>
+            @*<a asp-area="@menu.AreaName" asp-controller="@menu.ControllerName" asp-action="@menu.ActionName">@menu.AreaName - @menu.ControllerName - @menu.ActionName</a>*@
+            <a href="@Url.Action(menu.ActionName, menu.ControllerName, new{ area = menu.AreaName })">@menu.MenuName</a>
+
+        </div>
         
     }
+    
 </div>
 

@@ -1,4 +1,6 @@
-﻿using InventorySystem.Membership.Entities;
+﻿using InventorySystem.Core.Services;
+using InventorySystem.Membership.Entities;
+using InventorySystem.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,15 +13,21 @@ namespace InventorySystem.Web.Controllers
     public class RolesController : BaseController
     {
         private readonly RoleManager<Role> _roleManager;
-        public RolesController(RoleManager<Role> roleManager, IAuthorizationService authorizationService)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IMenuService _menuService;
+
+        public RolesController(RoleManager<Role> roleManager, UserManager<ApplicationUser> userManager, IMenuService menuService, IAuthorizationService authorizationService)
             :base(authorizationService)
         {
             _roleManager = roleManager;
+            _userManager = userManager;
+            _menuService = menuService;
         }
 
         public async Task<IActionResult> Index()
         {
             var roles = await _roleManager.Roles.ToListAsync();
+
             return View(roles);
         }
 
@@ -30,6 +38,10 @@ namespace InventorySystem.Web.Controllers
             {
                 await _roleManager.CreateAsync(new Role(roleName.Trim()));
             }
+
+            
+
+            //_userManager.AddPermissionClaim(User, $"{claim.Value}", area)
 
             return RedirectToAction("Index");
         }

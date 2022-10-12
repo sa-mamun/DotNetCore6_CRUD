@@ -3,9 +3,9 @@
     public class PermissionViewModel
     {
         public string RoleId { get; set; }
-        public IList<RoleClaimsViewModel> RoleClaims { get; set; }
+        public IList<ClaimsViewModel> RoleClaims { get; set; }
     }
-    public class RoleClaimsViewModel
+    public class ClaimsViewModel
     {
         public string Type { get; set; }
         public string Value { get; set; }

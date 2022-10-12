@@ -41,7 +41,7 @@ namespace InventorySystem.Web.Areas.User.Controllers
         public IActionResult Index()
         {
 
-            IList<RoleClaimsViewModel> roleClaimsViewModels = new List<RoleClaimsViewModel>();
+            IList<ClaimsViewModel> roleClaimsViewModels = new List<ClaimsViewModel>();
             IList<Menu> authorizedMenuList = new List<Menu>();
             var menus = _menuService.LoadAllMenus();
             foreach (var menu in menus)
