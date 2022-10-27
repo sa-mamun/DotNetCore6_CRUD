@@ -46,7 +46,10 @@
                             Permission
                         </th>
                         <th>
-                            Status
+                            View Permissions
+                        </th>
+                        <th>
+                            Full Data Permission
                         </th>
                     </tr>
                 </thead>
@@ -64,7 +67,12 @@
                             </td>
                             <td>
                                 <div class="form-check m-1">
-                                    <input asp-for="@Model.Permissions[i].Selected" class="form-check-input" />
+                                    <input asp-for="@Model.Permissions[i].IsViewPermitted" class="form-check-input" />
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-check m-1">
+                                    <input asp-for="@Model.Permissions[i].IsFullDataPermitted" class="form-check-input" />
                                 </div>
                             </td>
                         </tr>

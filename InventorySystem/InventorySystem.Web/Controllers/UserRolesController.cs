@@ -1,4 +1,5 @@
 ﻿using InventorySystem.Core.Services;
+using InventorySystem.Domain;
 using InventorySystem.Membership.Entities;
 using InventorySystem.Web.Helper;
 using InventorySystem.Web.Models;
@@ -54,24 +55,29 @@ namespace InventorySystem.Web.Controllers
 
             foreach (var menu in menus)
             {
-                bool isGranted = false;
-                string permissionType = string.IsNullOrWhiteSpace(menu.AreaName) ? "Permission" : menu.AreaName;
-                string permission = string.Empty;
+                bool isViewGranted = false;
+                bool isFullDataAccessGranted = false;
+                string permissionValue = string.Empty;
 
+                if (string.IsNullOrWhiteSpace(menu.AreaName) == false)
+                    permissionValue += $"{menu.AreaName}.";
                 if (string.IsNullOrWhiteSpace(menu.ControllerName) == false)
-                    permission += $"{menu.ControllerName}.";
+                    permissionValue += $"{menu.ControllerName}.";
                 if (string.IsNullOrWhiteSpace(menu.ActionName) == false)
-                    permission += $"{menu.ActionName}";
+                    permissionValue += $"{menu.ActionName}";
 
-                if (userClaims.Any(x => x.Type == permissionType && x.Value == permission))
-                    isGranted = true;
+                if (userClaims.Any(x => x.Type == PermissionTypes.ViewPermission && x.Value == permissionValue))
+                    isViewGranted = true;
+                if (userClaims.Any(x => x.Type == PermissionTypes.FullDataAccessPermission && x.Value == permissionValue))
+                    isFullDataAccessGranted = true;
 
                 userClaimsViewModel.Add(
                     new ClaimsViewModel
                     {
-                        Type = permissionType,
-                        Value = permission,
-                        Selected = isGranted
+                        //Type = permissionType,
+                        Value = permissionValue,
+                        IsViewPermitted = isViewGranted,
+                        IsFullDataPermitted = isFullDataAccessGranted,
                     });
             }
 
@@ -101,12 +107,13 @@ namespace InventorySystem.Web.Controllers
                 await _userManager.RemoveClaimAsync(user, claim);
             }
 
-            var selectedClaims = model.Permissions.Where(a => a.Selected).ToList();
+            var selectedClaims = model.Permissions.Where(a => a.IsViewPermitted).ToList();
             foreach (var claim in selectedClaims)
             {
-                //TODO: changed for permission
-                string area = string.IsNullOrWhiteSpace(claim.Type) ? "Permission" : claim.Type;
-                await _userManager.AddPermissionClaim(user, $"{claim.Value}", area);
+                await _userManager.AddPermissionClaim(user, $"{claim.Value}", PermissionTypes.ViewPermission);
+
+                if(claim.IsFullDataPermitted)
+                    await _userManager.AddPermissionClaim(user, $"{claim.Value}", PermissionTypes.FullDataAccessPermission);
             }
 
             //_signInManager.SignOutAsync(user);

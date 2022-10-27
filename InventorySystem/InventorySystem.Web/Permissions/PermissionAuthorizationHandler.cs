@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using InventorySystem.Domain;
+using Microsoft.AspNetCore.Authorization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,13 +22,8 @@ namespace InventorySystem.Web.Permissions
             var routeData = _httpContextAccessor.HttpContext.GetRouteData();
 
             var areaName = routeData?.Values["area"]?.ToString();
-            var area = string.IsNullOrWhiteSpace(areaName) ? "Permission" : areaName;
-
-            var splittedPermission = requirement.Permission.Split('.');
-
-            //TODO: Need to fix way of checking the permission
-            var permissionss = context.User.Claims.Where(x => x.Type == area &&
-                                                                x.Value == $"{splittedPermission[1]}.{splittedPermission[2]}");
+            var permissionss = context.User.Claims.Where(x => x.Type == PermissionTypes.ViewPermission &&
+                                                                x.Value == requirement.Permission);
 
             if (permissionss.Any())
             {

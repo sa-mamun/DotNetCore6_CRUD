@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using System.Security.Claims;
 using System.Security.Policy;
 
 namespace InventorySystem.Web.Controllers
@@ -20,12 +21,19 @@ namespace InventorySystem.Web.Controllers
         {
             if (User.IsInRole("SuperAdmin") == false)
             {
-                var areaName = ((ControllerBase)context.Controller).ControllerContext.RouteData.Values["area"];
+                var areaName = ((ControllerBase)context.Controller).ControllerContext.RouteData.Values["area"]?.ToString();
                 var controllerName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ControllerName;
                 var actionName = ((ControllerBase)context.Controller).ControllerContext.ActionDescriptor.ActionName;
 
-                areaName = string.IsNullOrWhiteSpace(areaName?.ToString()) ? "Permission" : areaName;
-                if (_authorizationService.AuthorizeAsync(User, $"{areaName}.{controllerName}.{actionName}").Result.Succeeded == false)
+                //var allDataPermission = User.Claims.Any(x => x.Type == $"{areaName}.{controllerName}.{actionName}" && x.Value == "True");
+
+                string policyName = string.Empty;
+                if (string.IsNullOrWhiteSpace(areaName) == false)
+                    policyName = $"{areaName}.";
+
+                policyName += $"{controllerName}.{actionName}";
+
+                if (_authorizationService.AuthorizeAsync(User, policyName).Result.Succeeded == false)
                 {
                     context.Result = new RedirectResult("Account/AccessDenied/");
                     return;

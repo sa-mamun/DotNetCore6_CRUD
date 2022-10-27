@@ -20,18 +20,18 @@ namespace InventorySystem.Web.Permissions
         public Task<AuthorizationPolicy> GetDefaultPolicyAsync() => FallbackPolicyProvider.GetDefaultPolicyAsync();
         public Task<AuthorizationPolicy> GetPolicyAsync(string policyName)
         {
-            var routeData = _httpContextAccessor.HttpContext.GetRouteData();
+            //Permission.Home.Index
+            //var routeData = _httpContextAccessor.HttpContext.GetRouteData();
 
-            var areaName = routeData?.Values["area"]?.ToString();
-            var area = string.IsNullOrWhiteSpace(areaName) ? "Permission" : areaName;
+            //var areaName = routeData?.Values["area"]?.ToString();
+            //var area = string.IsNullOrWhiteSpace(areaName) ? "Permission" : areaName;
 
-            if (policyName.StartsWith(area, StringComparison.OrdinalIgnoreCase))
-            {
-                var policy = new AuthorizationPolicyBuilder();
+            var policy = new AuthorizationPolicyBuilder();
                 policy.AddRequirements(new PermissionRequirement(policyName));
+                //Permission.Home.Index
                 return Task.FromResult(policy.Build());
-            }
-            return FallbackPolicyProvider.GetPolicyAsync(policyName);
+
+            //return FallbackPolicyProvider.GetPolicyAsync(policyName);
         }
         public Task<AuthorizationPolicy> GetFallbackPolicyAsync() => FallbackPolicyProvider.GetDefaultPolicyAsync();
     }

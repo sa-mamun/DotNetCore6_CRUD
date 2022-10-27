@@ -55,7 +55,7 @@ namespace InventorySystem.Web.Controllers
                     { 
                         Type = permissionType, 
                         Value = permission, 
-                        Selected = isGranted
+                        IsViewPermitted = isGranted
                     });
             }
 
@@ -70,7 +70,7 @@ namespace InventorySystem.Web.Controllers
             {
                 await _roleManager.RemoveClaimAsync(role, claim);
             }
-            var selectedClaims = model.RoleClaims.Where(a => a.Selected).ToList();
+            var selectedClaims = model.RoleClaims.Where(a => a.IsViewPermitted).ToList();
             foreach (var claim in selectedClaims)
             {
                 //TODO: changed for permission
